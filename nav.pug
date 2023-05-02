@@ -1,0 +1,13 @@
+- pages ??= [];
+nav 
+  ul 
+	each page, index in pages 
+	  li
+	    if page.href == page.href 
+		  span.active= page.title 
+		else 
+		  a(href=page.href)= page.title 
+   if user 
+     include logout.pug 
+	else 
+	 include login.pug 
