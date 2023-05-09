@@ -9,9 +9,7 @@ const
     FROM users   
     WHERE login = ? AND psw =  PASSWORD(CONCAT('${salt}',?))`),
 
-	getUserDataQ = await connection.prepare(`SELECT id, login, realname 
-  FROM users
-  WHERE id = ?`),
+	getUserDataQ = await connection.prepare(`SELECT id, login, realname FROM users WHERE id = ?`),
 
 	newSessionQ = await connection.prepare(`INSERT INTO sessions (userId,secret) values(?,?)`),
 
