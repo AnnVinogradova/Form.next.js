@@ -1,13 +1,14 @@
 - pages ??= [];
 nav 
-  ul 
-	each page, index in pages 
-	  li
-	    if page.href == page.href 
-		  span.active= page.title 
-		else 
-		  a(href=page.href)= page.title 
-   if user 
-     include logout.pug 
-	else 
-	 include login.pug 
+  ul
+    each pg,index in pages 
+      li
+        if pg.href == page.href
+          span.active= pg.title
+        else 
+          a(href=pg.href)= pg.title
+  if user
+    include logout.pug
+  else
+    include login.pug
+        
