@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
   CONSTRAINT `FK__users` FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Дамп данных таблицы formdb.posts: ~0 rows (приблизительно)
+-- Дамп данных таблицы formdb.posts: ~1 rows (приблизительно)
 INSERT INTO `posts` (`id`, `userId`, `title`, `body`, `time`) VALUES
 	(1, 2, 'h', 'Hello!!!', '2023-05-08 21:00:00');
 

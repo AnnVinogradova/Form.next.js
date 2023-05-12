@@ -2,8 +2,8 @@ import { createConnection } from 'mysql2/promise';
 
 
 const
-	salt = 'mySuper%SecretSalt!*&^%$#',
-	connection = await createConnection('mysql://user:111@192.168.100.4/myforum'),
+	salt = 'mySuper%SecretSalt!*&^%$#', // TODO move to .env-file 
+	connection = await createConnection('mysql://user:111@localhost/formdb'),
 
 	testUserQ = await connection.prepare(`SELECT id 
     FROM users   

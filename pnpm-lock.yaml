@@ -3,13 +3,13 @@ lockfileVersion: 5.4
 specifiers:
   cookie: ^0.5.0
   micro: ^10.0.1
-  mysql2: ^3.3.0
+  mysql2: ^3.2.4
   pug: ^3.0.2
 
 dependencies:
   cookie: 0.5.0
   micro: 10.0.1
-  mysql2: 3.3.0
+  mysql2: 3.2.4
   pug: 3.0.2
 
 packages:
@@ -245,8 +245,8 @@ packages:
       raw-body: 2.4.1
     dev: false
 
-  /mysql2/3.3.0:
-    resolution: {integrity: sha512-/+LGlWgXxppcomT1NqkUnaDchcS9tebsXsj5eZQhnAB/onlSLgqMA5W9ZRHcZPKyqg3XROJDgomB4eCkn6Ca2g==}
+  /mysql2/3.2.4:
+    resolution: {integrity: sha512-VRjBMAB/WXd35cytsbKPy5eQMdHTQu661CcFAK+pcScVCfGpzQQR9EOM9H4z9tvEW0maVOjTAX0dqXneLX4kaQ==}
     engines: {node: '>= 8.0'}
     dependencies:
       denque: 2.1.0

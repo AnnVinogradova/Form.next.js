@@ -6,8 +6,9 @@ import { createConnection } from 'mysql2/promise';
 
 
 const
+
 	port = 3333,
-	connection = await createConnection('mysql://user:111@192.168.100.4/northwind'),
+	connection = await createConnection('mysql://user:111@localhost/formdb'),
 	[tableList] = await connection.execute('SHOW TABLES'),
 	checkQ = await connection.prepare(`CALL sys.table_exists('northwind', ? , @exists)`),
 	checkResultQ = await connection.prepare('SELECT @exists; '),
